@@ -2,11 +2,13 @@ import Header from "@components/Header";
 import ProfileSection from "@/app/components/Profile";
 import InfoCard from "@/app/components/Card";
 import CertificationsTable from "@/app/components/Certificates";
+import Contact from "@components/Contact";
 import Footer from "@components/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <div id="container">
       <Header />
       <div className="max-w-7xl m-auto px-6 py-6 space-y-6">
         <ProfileSection />
@@ -62,10 +64,13 @@ export default function Home() {
           <InfoCard title="Certifikáty">
             <CertificationsTable />
           </InfoCard>
+
         </div>
       </div>
-
       <Footer/>
+      </div>
+      <Contact />
     </main>
+    
   );
 }

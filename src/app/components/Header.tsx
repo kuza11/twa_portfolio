@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function Header() {
@@ -19,12 +20,19 @@ export default function Header() {
         <Link href="https://www.facebook.com/skuroedov" target="_blank">
           Facebook
         </Link>
-        <Link
-          href="/contact"
-          className="bg-(--primary) text-(--background) px-4 py-2 rounded"
+        <button
+          onClick={() => {
+            const contactForm = document.getElementById("contact");
+            const container = document.getElementById("container");
+            if (contactForm && container) {
+              contactForm.classList.remove("hidden");
+              container.classList.add("blur-sm", "pointer-events-none");
+            }
+          }}
+          className="bg-(--primary) text-(--background) px-4 py-2 rounded hover:cursor-pointer"
         >
           Kontakt
-        </Link>
+        </button>
       </nav>
     </header>
   );
