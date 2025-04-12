@@ -91,7 +91,7 @@ export default function Contact() {
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
-          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-48 max-h-[50vh]"
+          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-48 max-h-[45svh]"
           required
         />
       </div>
