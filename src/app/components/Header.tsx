@@ -22,7 +22,7 @@ export default function Header() {
             setIsOpen(!isOpen);
           }}
         />
-        <nav className={`gap-6 items-center bg-(--background) ${isOpen ? "flex flex-col absolute top-16 right-0 p-4 rounded rounded-r-none shadow z-50" : "hidden sm:flex"}`}>
+        <nav className={`gap-6 items-center bg-(--background) ${isOpen ? "flex flex-col absolute top-16 right-0 p-4 rounded-md rounded-md-r-none shadow z-50" : "hidden sm:flex"}`}>
           <Link
             href="https://cz.linkedin.com/in/sergey-kuroedov-2a21b4208?trk=people-guest_people_search-card"
             target="_blank"
@@ -44,7 +44,7 @@ export default function Header() {
                 container.classList.add("blur-sm", "pointer-events-none");
               }
             }}
-            className="bg-(--primary) text-(--background) px-4 py-2 rounded hover:cursor-pointer"
+            className="bg-(--primary) text-(--background) px-4 py-2 rounded-md hover:cursor-pointer"
           >
             Kontakt
           </button>

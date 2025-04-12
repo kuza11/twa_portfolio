@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="bg-(--foreground) text-(--background) rounded overflow-hidden pr-2 sm:p-8 flex items-center gap-4 sm:gap-8 shadow">
+    <div className="bg-(--foreground) text-(--background) rounded-md overflow-hidden pr-2 sm:p-8 flex items-center gap-4 sm:gap-8 shadow">
       <Image
         src="/profile.png"
         alt="Jakub Zvolánek"
         width={192}
         height={192}
-        className="sm:rounded w-34 sm:w-48"
+        className="sm:rounded-md w-34 sm:w-48"
         quality={100}
       />
       <div>

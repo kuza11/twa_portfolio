@@ -33,7 +33,7 @@ export default function Contact() {
       onSubmit={handleSubmit}
       ref={formRef}
       id="contact"
-      className="space-y-4 hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-(--background) p-6 rounded shadow-xl w-[calc(100%-2rem)] min-[480px]:w-md z-50"
+      className="space-y-4 hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-(--background) p-6 rounded-md shadow-xl w-[calc(100%-2rem)] min-[480px]:w-md z-50"
     >
       <h2 className="text-2xl font-light text-center">Napište mi</h2>
 
@@ -46,7 +46,7 @@ export default function Contact() {
           name="name"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
           required
         />
       </div>
@@ -62,7 +62,7 @@ export default function Contact() {
           onChange={(e) =>
             setFormData({ ...formData, surname: e.target.value })
           }
-          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
           required
         />
       </div>
@@ -76,7 +76,7 @@ export default function Contact() {
           name="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
           required
         />
       </div>
@@ -91,7 +91,7 @@ export default function Contact() {
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
-          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-48 max-h-[50vh]"
+          className="w-full px-1 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-48 max-h-[50vh]"
           required
         />
       </div>
@@ -103,13 +103,13 @@ export default function Contact() {
             setFormData({ name: "", surname: "", message: "", email: "" });
             handleClose();
           }}
-          className="py-2 bg-white border border-gray-300 rounded w-full hover:cursor-pointer font-semibold"
+          className="py-2 bg-white border border-gray-300 rounded-md w-full hover:cursor-pointer font-semibold"
         >
           Zrušit
         </button>
         <button
           type="submit"
-          className="py-2 bg-(--primary) text-(--background) rounded w-full hover:cursor-pointer font-semibold"
+          className="py-2 bg-(--primary) text-(--background) rounded-md w-full hover:cursor-pointer font-semibold"
         >
           Odeslat
         </button>
