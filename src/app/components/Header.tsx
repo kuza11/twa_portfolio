@@ -17,7 +17,7 @@ export default function Header() {
           width={320}
           height={320}
           quality={100}
-          className="opacity-50 sm:hidden hover:cursor-pointer size-8"
+          className="opacity-50 sm:hidden hover:cursor-pointer size-7"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
