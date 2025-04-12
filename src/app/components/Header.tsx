@@ -14,10 +14,10 @@ export default function Header() {
         <Image
           src="/menu.png"
           alt="Menu"
-          width={32}
-          height={32}
+          width={320}
+          height={320}
           quality={100}
-          className="opacity-50 sm:hidden hover:cursor-pointer"
+          className="opacity-50 sm:hidden hover:cursor-pointer size-8"
           onClick={() => {
             setIsOpen(!isOpen);
           }}

@@ -6,8 +6,8 @@ export default function Profile() {
       <Image
         src="/profile.png"
         alt="Jakub Zvolánek"
-        width={192}
-        height={192}
+        width={1080}
+        height={1080}
         className="sm:rounded-md w-34 sm:w-48"
         quality={100}
       />
