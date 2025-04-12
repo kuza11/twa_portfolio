@@ -14,7 +14,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    console.log(formData);
     setFormData({ name: "", surname: "", message: "", email: "" });
   };
 

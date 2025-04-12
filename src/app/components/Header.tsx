@@ -22,7 +22,13 @@ export default function Header() {
             setIsOpen(!isOpen);
           }}
         />
-        <nav className={`gap-6 items-center bg-(--background) ${isOpen ? "flex flex-col absolute top-16 right-0 p-4 rounded-md rounded-md-r-none shadow z-50" : "hidden sm:flex"}`}>
+        <nav
+          className={`gap-6 items-center bg-(--background) ${
+            isOpen
+              ? "flex flex-col absolute top-16 right-0 p-4 rounded-md rounded-md-r-none shadow z-50"
+              : "hidden sm:flex"
+          }`}
+        >
           <Link
             href="https://cz.linkedin.com/in/sergey-kuroedov-2a21b4208?trk=people-guest_people_search-card"
             target="_blank"
