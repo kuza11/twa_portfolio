@@ -4,7 +4,7 @@ interface InfoCardProps {
   children: React.ReactNode;
 }
 
-export default function InfoCard({
+export default function Card({
   title,
   justify = true,
   children,

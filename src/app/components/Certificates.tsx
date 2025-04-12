@@ -6,7 +6,7 @@ const certifications: Record<string, string> = {
   Microsoft: "AZ-900",
 };
 
-export default function CertificationsTable() {
+export default function Certificates() {
   return (
     <div className="flex flex-col gap-2">
       {Object.entries(certifications).map(([name, details]) => (

@@ -1,7 +1,7 @@
 import Header from "@components/Header";
-import ProfileSection from "@/app/components/Profile";
-import InfoCard from "@/app/components/Card";
-import CertificationsTable from "@/app/components/Certificates";
+import Profile from "@/app/components/Profile";
+import Card from "@/app/components/Card";
+import Certificates from "@/app/components/Certificates";
 import Contact from "@components/Contact";
 import Footer from "@components/Footer";
 
@@ -10,11 +10,11 @@ export default function Home() {
     <main className="min-h-screen">
       <div id="container">
       <Header />
-      <div className="max-w-7xl m-auto px-6 py-6 space-y-6">
-        <ProfileSection />
+      <div className="max-w-7xl m-auto p-2.5 sm:p-6 space-y-2.5 sm:space-y-6">
+        <Profile />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <InfoCard title="O mě">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-6">
+          <Card title="O mě">
             <div className="space-y-4">
               <p>
                 Jmenuji se Jakub Zvolánek, je mi 18 let a studuji SPŠEaG v
@@ -30,9 +30,9 @@ export default function Home() {
                 Junior.
               </p>
             </div>
-          </InfoCard>
+          </Card>
 
-          <InfoCard title="Zkušenosti">
+          <Card title="Zkušenosti">
             <p>
               V rámci praxe jsem pracoval jako IT asistent ve společnosti
               Honeywell, kde jsem se věnoval správě a instalaci operačních
@@ -42,9 +42,9 @@ export default function Home() {
               jako lektor-instruktor ze SPŠEaG v Úžlabině, kde jsem pomáhal
               účastníkům při tvorbě programů a řešení technických problémů.
             </p>
-          </InfoCard>
+          </Card>
 
-          <InfoCard title="Dovednosti" justify={false}>
+          <Card title="Dovednosti" justify={false}>
             <ul className="list-disc pl-4 space-y-2">
               <li>
                 Operační systémy: Windows 8/10/11, XP/Vista/7 (expert), Linux
@@ -59,11 +59,11 @@ export default function Home() {
               </li>
               <li>Grafické programy: Adobe Photoshop, AutoCAD (pokročilý)</li>
             </ul>
-          </InfoCard>
+          </Card>
 
-          <InfoCard title="Certifikáty">
-            <CertificationsTable />
-          </InfoCard>
+          <Card title="Certifikáty">
+            <Certificates />
+          </Card>
 
         </div>
       </div>

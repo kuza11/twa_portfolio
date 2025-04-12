@@ -33,7 +33,7 @@ export default function Contact() {
       onSubmit={handleSubmit}
       ref={formRef}
       id="contact"
-      className="space-y-4 hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-(--background) p-6 rounded shadow-xl w-md z-50"
+      className="space-y-4 hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-(--background) p-6 rounded shadow-xl w-[calc(100%-2rem)] min-[480px]:w-md z-50"
     >
       <h2 className="text-2xl font-light text-center">Napište mi</h2>
 
@@ -91,7 +91,7 @@ export default function Contact() {
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
-          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-[150px]"
+          className="w-full px-1 border-gray-300 border rounded focus:outline-none focus:ring-1 focus:ring-blue-500 min-h-48 max-h-[50vh]"
           required
         />
       </div>

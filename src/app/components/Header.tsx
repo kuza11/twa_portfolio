@@ -1,39 +1,55 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="flex justify-between items-center py-4 px-6 border-b-gray-200 border-b-1">
-      <Link href="/" className="text-2xl font-bold">
-        PORTFOLIO
-      </Link>
-      <nav className="flex gap-6 items-center">
-        <Link
-          href="https://cz.linkedin.com/in/sergey-kuroedov-2a21b4208?trk=people-guest_people_search-card"
-          target="_blank"
-        >
-          LinkedIn
+    <header className="border-b-gray-200 border-b-1">
+      <div className="flex justify-between items-center w-full py-4 px-6 max-w-[120rem] m-auto">
+        <Link href="/" className="text-2xl font-bold">
+          PORTFOLIO
         </Link>
-        <Link href="https://www.instagram.com/skuroedov_/" target="_blank">
-          Instagram
-        </Link>
-        <Link href="https://www.facebook.com/skuroedov" target="_blank">
-          Facebook
-        </Link>
-        <button
+        <Image
+          src="/menu.png"
+          alt="Menu"
+          width={32}
+          height={32}
+          quality={100}
+          className="opacity-50 sm:hidden hover:cursor-pointer"
           onClick={() => {
-            const contactForm = document.getElementById("contact");
-            const container = document.getElementById("container");
-            if (contactForm && container) {
-              contactForm.classList.remove("hidden");
-              container.classList.add("blur-sm", "pointer-events-none");
-            }
+            setIsOpen(!isOpen);
           }}
-          className="bg-(--primary) text-(--background) px-4 py-2 rounded hover:cursor-pointer"
-        >
-          Kontakt
-        </button>
-      </nav>
+        />
+        <nav className={`gap-6 items-center bg-(--background) ${isOpen ? "flex flex-col absolute top-16 right-0 p-4 rounded rounded-r-none shadow z-50" : "hidden sm:flex"}`}>
+          <Link
+            href="https://cz.linkedin.com/in/sergey-kuroedov-2a21b4208?trk=people-guest_people_search-card"
+            target="_blank"
+          >
+            LinkedIn
+          </Link>
+          <Link href="https://www.instagram.com/skuroedov_/" target="_blank">
+            Instagram
+          </Link>
+          <Link href="https://www.facebook.com/skuroedov" target="_blank">
+            Facebook
+          </Link>
+          <button
+            onClick={() => {
+              const contactForm = document.getElementById("contact");
+              const container = document.getElementById("container");
+              if (contactForm && container) {
+                contactForm.classList.remove("hidden");
+                container.classList.add("blur-sm", "pointer-events-none");
+              }
+            }}
+            className="bg-(--primary) text-(--background) px-4 py-2 rounded hover:cursor-pointer"
+          >
+            Kontakt
+          </button>
+        </nav>
+      </div>
     </header>
   );
 }
