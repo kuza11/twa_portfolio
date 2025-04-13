@@ -33,16 +33,22 @@ export default function Home() {
             </Card>
 
             <Card title="Zkušenosti">
-              <p>
-                V rámci praxe jsem pracoval jako IT asistent ve společnosti
-                Honeywell, kde jsem se věnoval správě a instalaci operačních
-                systémů Windows a Linux, výzkumu a aplikaci lokálních LLM
-                modelů, konfiguraci síťových prvků, počítačovému HW a aplikacím
-                strojového učení včetně konfigurace vektorové databáze. Mám také
-                zkušenosti jako lektor-instruktor ze SPŠEaG v Úžlabině, kde jsem
-                pomáhal účastníkům při tvorbě programů a řešení technických
-                problémů.
-              </p>
+              <div className="space-y-4">
+                <p>
+                  V rámci praxe jsem pracoval jako IT asistent ve společnosti
+                  Honeywell, kde jsem se věnoval správě a instalaci operačních
+                  systémů Windows a Linux, výzkumu a aplikaci lokálních LLM
+                  modelů, konfiguraci síťových prvků, počítačovému HW a
+                  aplikacím strojového učení včetně konfigurace vektorové
+                  databáze.
+                </p>
+                <p>
+                  Mám také zkušenosti jako lektor-instruktor ze SPŠEaG v
+                  Úžlabině, kde jsem pomáhal účastníkům při tvorbě programů a
+                  řešení technických problémů. Také jsem zde spoluvytvářel
+                  webovou aplikaci klub absolventů.
+                </p>
+              </div>
             </Card>
 
             <Card title="Dovednosti" justify={false}>
