@@ -10,7 +10,7 @@ export default function Home() {
     <main className="min-h-screen">
       <div id="container">
         <Header />
-        <div className="max-w-7xl m-auto p-2.5 sm:p-6 space-y-2.5 sm:space-y-6">
+        <div className="max-w-7xl m-auto p-2.5 max-[312px]:px-0 sm:p-6 space-y-2.5 sm:space-y-6">
           <Profile />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-6">
