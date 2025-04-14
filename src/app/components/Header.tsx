@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header className="border-b-gray-200 border-b-1">
       <div className="flex justify-between items-center w-full py-4 px-6 max-w-[120rem] m-auto">
-        <Link href="/" className="text-2xl font-bold">
+        <h1 className="text-2xl font-bold">
           PORTFOLIO
-        </Link>
+        </h1>
         <Image
           src="/menu.png"
           alt="Menu"
